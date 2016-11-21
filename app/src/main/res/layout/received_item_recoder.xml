@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+	android:layout_marginTop="5dp"
+	android:orientation="vertical"
+    >
+
+	<TextView
+		android:id="@+id/received_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/colorAccent"
+		android:textSize="16sp"
+		/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	<ImageView 
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="10dp"
+	    android:src="@drawable/bubbles"
+	    android:id="@+id/icon"	
+	    />
+	<FrameLayout 
+	    android:id="@+id/recoder_lenght"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/dhjf"
+		android:layout_marginLeft="10dp"
+	    >
+	    <View android:id="@+id/recoder_anim"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_gravity="center_vertical|left"
+	        android:background="@drawable/jda"
+	        />
+	</FrameLayout>
+	<TextView 
+	    android:id="@+id/recoder_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="1'"
+		android:layout_marginLeft="3dp"
+		android:textColor="#ff7777"
+	    />
+	</LinearLayout>
+	
+</LinearLayout>

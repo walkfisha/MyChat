@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+	android:layout_marginTop="5dp"
+	android:orientation="vertical"
+	android:gravity="right"
+    >
+	<TextView
+		android:id="@+id/send_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/colorAccent"
+		android:textSize="16sp"
+		/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/recoder_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/recoder_lenght"
+			android:text="1'"
+			android:layout_marginRight="3dp"
+			android:textColor="#ff7777"
+			/>
+	<FrameLayout 
+	    android:id="@+id/recoder_lenght"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:layout_marginRight="10dp"
+	    android:background="@drawable/send_msg"
+	    >
+	    <View android:id="@+id/recoder_anim"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:background="@drawable/adj"
+	        />
+	</FrameLayout>
+		<ImageView
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginEnd="10dp"
+			android:src="@drawable/bubbles"
+			android:id="@+id/me_headIcon"
+			/>
+
+	</LinearLayout>
+	
+</LinearLayout>
